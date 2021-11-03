@@ -84,6 +84,30 @@ a a:hover a:active a:visited {
     cursor: pointer;
 }
 
+/* ////// BOTÓN DE MENTIRA PERO QUE FUNCIOINA ///////// */
+.__botonSecundario__margenSuperior {
+    margin: 8px auto 0;
+}
+
+.__botonSecundario__enlace:link, .__botonSecundario__enlace:visited {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 8px 32px 8px 32px;
+    border-radius: 50px;
+    background-color: #EFEFEF;
+    color: #0062CB;
+    border: 2px solid #0062CB;
+    text-align: center;
+}
+
+.__botonSecundario__enlace:active {
+    background-color: #0062CB;
+    color: #EFEFEF;
+    border: 2px solid #0062CB;
+}
 
 /* ////////////////////////////////////////// HEADER /// */
 .headerContenedor {
@@ -883,6 +907,7 @@ a a:hover a:active a:visited {
 /* ////////////////////////////////////////// END OF MAIN //// */
 
 /* ////////////////////////////////////////// SOBRE MÍ // */
+
 .sobreMi {
     padding-top: 94px;
 }
@@ -894,7 +919,6 @@ a a:hover a:active a:visited {
     padding: 0 10%;
 }
 
-
 /* //////////// MEDIA QUERY 768px ///// */
 @media only screen and (min-width: 768px) {
 
@@ -904,7 +928,6 @@ a a:hover a:active a:visited {
     }
 }
 
-
 /* //////// MEDIA QUERY 1600px ///////// */
 @media only screen and (min-width: 1600px) {
 
@@ -913,4 +936,287 @@ a a:hover a:active a:visited {
         padding-right: 25%;
     }
 }
+
 /* ////////////////////////////////////////// FINAL DE SOBRE MÍ /// */
+
+/* /////////////////////////////////// TARIFAS // */
+
+.tarifas {
+    padding: 94px 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarifas__textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+}
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .tarifas__textos {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .tarifas__textos {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+/* //////////// INICIO DE TARIFAS BLOCK ///// */
+
+.tarifas__servicio__tipoServicio {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 40px 10% 24px;
+    text-align: center;
+}
+
+.tarifas__servicios {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: baseline;
+    padding: 0 10%;
+    margin-bottom: 24px;
+}
+
+.tarifas__servicios__block {
+    margin: 0 auto;
+}
+
+.tarifas__servicios__servicio {
+    border: 2px solid #0f0f0f;
+    border-radius: 25px;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    max-width: 366px;
+    min-width: 300px;
+    margin: 0 auto 24px;
+}
+
+.servicio__nombre {
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 24px 0;
+    border-bottom: 2px solid #0f0f0f;
+}
+
+.servicio__precio {
+    font-size: 70px;
+    color: #0062CB;
+    font-weight: bolder;
+    padding: 0 0 16px;
+    text-align: center;
+    border-bottom: 2px solid #0f0f0f; 
+}
+
+.servicio__bloque {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #0f0f0f;
+}
+
+.servicio__bloque__icono--incluido {
+    height: 30px;
+    width: auto;
+    margin: 16px;
+}
+
+.servicio__bloque__descripcion--incluido {
+    font-size: 18px;
+    color: #0062CB;
+    font-weight: normal;
+    margin: 16px 0;
+}
+
+.servicio__NOincluye {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px 0;
+    text-align: center;
+    border-bottom: 2px solid #0f0f0f;
+    color:#0f0f0f;
+}
+
+.servicio__bloque__icono--NOincluido {
+    width: 30px;
+    height: auto;
+    margin: 16px;
+}
+
+.servicio__bloque__descripcion--NOincluido {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 16px 0;
+    text-decoration-line: line-through;
+}
+
+.botonImportante {
+    background-color: #EFEFEF;
+    color: #0062CB;
+    margin: 40px auto;
+    border: 2px solid #0062CB;
+    cursor: pointer;
+}
+
+.botonImportante:hover, .botonImportante:active, .botonImportante:focus {
+    background-color: #0062CB;
+    color: #EFEFEF;
+}
+
+.servicio__bloque__descripcion {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 32px;
+    text-align: center;
+}
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .tarifas__servicios { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .tarifas__servicios { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+/* /////////////////////////////////// FINAL DE TARIFAS // */
+
+/* /////////////////////////////////// FORMULARIO INFO // */
+
+.contenedorFormularioInfo {
+    padding: 94px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorFormularioInfo__textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+    width: 100%;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.contenedorFormularioInfo__block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10%;
+    margin-bottom: 24px;
+}
+ 
+/* /// INPUT // */
+
+/* (Para ocultar las flechitas en los input number) */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.formularioInfo__input {
+    font-family: inherit;
+    font-size: 18px;
+    padding: 16px 24px;
+    border: 1px solid #0f0f0f;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    display: block;
+    background-color: #EFEFEF;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.formularioInfo__input:focus {
+    border: 1px solid #0062CB;
+}
+
+/* /// CHECKBOX // */
+.contenedorAceptoPolitica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    flex-basis: 100%;
+}
+
+input[type="checkbox"] {
+    margin: 0px;
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #0f0f0f;
+}
+
+.registro {
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .contenedorFormularioInfo__textos { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .contenedorFormularioInfo__block { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .contenedorFormularioInfo__textos { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .contenedorFormularioInfo__block { 
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+}
+
+/* /////////////////////////////////// FINAL DE FORMULARIO INFO // */
