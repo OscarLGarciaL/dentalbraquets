@@ -4,6 +4,7 @@ html {
 
 html * {
     box-sizing: border-box;
+    text-underline-offset: 0.1em;
 }
 
 html, body {
@@ -330,6 +331,7 @@ a a:hover a:active a:visited {
     color: #EFEFEF;
     border: 2px solid #EFEFEF;
     background-color: #0062cb00;
+    cursor: pointer;
 }
 
 .CTA__boton:hover, .CTA__boton:active {
@@ -380,19 +382,19 @@ a a:hover a:active a:visited {
 }
 
 .--perfil1 {
-    background-image: url(images/profiles/ani-kolleshi-7jjnJ-QA9fY-unsplash.jpg);
+    background-image: url(../images/profiles/ani-kolleshi-7jjnJ-QA9fY-unsplash.jpg);
     background-position: center top;
     background-size: cover;
 }
 
 .--perfil2 {
-    background-image: url(images/profiles/jonathan-borba-Yui-VjmS8AA-unsplash.jpg);
+    background-image: url(../images/profiles/jonathan-borba-Yui-VjmS8AA-unsplash.jpg);
     background-position: center top;
     background-size: contain;
 }
 
 .--perfil3 {
-    background-image: url(images/profiles/bofu-shaw-Dqrlp6cMLkE-unsplash.jpg);
+    background-image: url(../images/profiles/bofu-shaw-Dqrlp6cMLkE-unsplash.jpg);
     background-position: center top;
     background-size: cover;
 }
