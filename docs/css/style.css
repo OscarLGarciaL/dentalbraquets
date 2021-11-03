@@ -884,7 +884,7 @@ a a:hover a:active a:visited {
 
 /* ////////////////////////////////////////// SOBRE MÍ // */
 .sobreMi {
-    padding: 94px 0 ;
+    padding-top: 94px;
 }
 
 .sobreMi__textos {
