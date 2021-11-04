@@ -1638,7 +1638,7 @@ iframe {
 
 /* /////////////////////////////////// TUS DATOS // */
 
-.datosUsuario {
+.areaPersonal__datosUsuario {
     padding: 0px 10% 94px;
 }
 
@@ -1676,7 +1676,7 @@ iframe {
 /* //////////// MEDIA QUERY 768px ///// */
 @media only screen and (min-width: 768px) {
 
-    .datosUsuario { 
+    .areaPersonal__datosUsuario { 
         padding-left: 20%;
         padding-right: 20%;
     }
@@ -1685,7 +1685,7 @@ iframe {
 /* //////// MEDIA QUERY 1600px ///////// */
 @media only screen and (min-width: 1600px) {
 
-    .datosUsuario { 
+    .areaPersonal__datosUsuario { 
         padding-left: 30%;
         padding-right: 30%;
     }
