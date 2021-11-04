@@ -2004,3 +2004,104 @@ input[type=number] {
 }
 
 /* ////////////////////////// FINAL DE INICIAR SESIÓN // */
+
+/* /////////////////////////////////// TUS DATOS // */
+
+.datosUsuario {
+    padding: 94px 0;
+}
+
+.datosUsuario__textos {
+    padding: 0 10%;
+}
+
+.datosUsuario__block {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.datosUsuario__bloque {
+    margin-bottom: 32px;
+    flex-grow: 1;
+}
+
+.datosUsuario__bloque:last-of-type {
+    margin-bottom: 0px;
+}
+
+.datosUsuario__tipoDatos {
+    margin-bottom: 16px;
+}
+
+.datosUsuario__contenedor {
+    border: 1px solid #0f0f0f;
+    border-radius: 5px;
+    padding: 8px 12px;
+}
+
+.datosUsuario__contenedor__apartado {
+    padding: 16px 0;
+    margin: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px dashed #0f0f0f;
+}
+
+.__total {
+    border-bottom: 2px solid #0f0f0f;
+    color: #0062CB;
+}
+
+.datosUsuario__contenedor__apartado:last-of-type {
+    border-bottom: 0;
+}
+
+.apartado__nombre {
+    font-weight: bold;
+    color: inherit;
+    flex-basis: 100%;
+}
+
+.apartado__total {
+    font-weight: bold;
+    color: inherit;
+}
+
+.apartado__suma {
+    font-weight: bold;
+    color: inherit;
+}
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .datosUsuario__textos { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .datosUsuario__block { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .datosUsuario__textos { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .datosUsuario__block { 
+        padding-left: 35%;
+        padding-right: 35%;
+    }
+}
+
+/* /////////////////////////////////// FINAL DE TUS DATOS // */
