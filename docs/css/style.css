@@ -1404,7 +1404,7 @@ input[type="checkbox"] {
 /* ////////////////// ESTRUCTURA ///////////////////// */
 
 .estructura {
-    padding: 0 0 94px;
+    padding: 0;
 }
 
 .estructura__textos {
