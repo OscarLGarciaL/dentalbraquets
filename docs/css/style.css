@@ -2105,3 +2105,38 @@ input[type=number] {
 }
 
 /* /////////////////////////////////// FINAL DE TUS DATOS // */
+
+/* ////////////////////////////////////////// PAGO CORRECTO // */
+
+.pagoCorrecto {
+    padding: 94px 0;
+}
+
+.pagoCorrecto__textos {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .pagoCorrecto__textos { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .pagoCorrecto__textos { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+/* ////////////////////////////////////////// FINAL DE PAGO CORRECTO /// */
+
