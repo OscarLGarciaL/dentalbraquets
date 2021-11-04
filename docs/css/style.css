@@ -1220,3 +1220,243 @@ input[type="checkbox"] {
 }
 
 /* /////////////////////////////////// FINAL DE FORMULARIO INFO // */
+
+/* ////////////////////////////////////////// DISEÑO WEB // */
+
+.disenoWeb {
+    padding: 94px 0 62px;
+}
+
+.disenoWeb__textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+}
+
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .disenoWeb__textos {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .disenoWeb__textos {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+/* ////////////////////////////////// FINAL DE DISEÑO WEB /// */
+
+/* /////////////////// BENEFICIOS ///////////////////// */
+
+.beneficios {
+    padding-bottom: 94px;
+}
+
+.beneficios__textos {
+ padding: 0 10% 0;
+}
+
+.beneficios__contenedor {
+    padding: 0 10% 0;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    flex-wrap: wrap;
+    min-height: 436px;
+}
+
+.beneficios__contenedor__beneficio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 149.5px;
+    margin-bottom: 24px;
+}
+
+.beneficios__contenedor__beneficio:nth-of-type(even) {
+    align-self: flex-end;
+}
+
+.beneficio__imagen {
+    width: 132px;
+    height: 132px;
+    margin-bottom: 8px;
+}
+
+.beneficio__texto {
+    text-align: center;
+}
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .beneficios__textos { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .beneficios__contenedor { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .beneficios__textos { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .beneficios__contenedor { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+/* /////////////////////////// FINAL DE BENEFICIOS // */
+
+/* //////////////////////////////// PROCESO //////////// */
+
+.proceso {
+    padding: 94px 0;
+}
+
+.proceso__textos {
+    padding: 0 10%;
+}
+
+.proceso__pasos {
+    padding: 0 10%;
+}
+
+.proceso__paso__numero {
+    font-family: inherit;
+    font-size: 70px;
+    color: #0062CB;
+    font-weight: bolder; 
+    display: inline;
+    margin-right: 16px;
+}
+
+.proceso__paso__nombre {
+    display: inline;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #0f0f0f;
+}
+
+.proceso__paso__descripcion {
+    margin-bottom: 32px;
+}
+
+.proceso__paso__flecha {
+    width: 56px;
+    height: 56px;
+}
+
+.proceso__paso:last-of-type .proceso__paso__descripcion {
+    margin-bottom: 0;
+}
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .proceso__textos { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .proceso__pasos { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .proceso__textos { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .proceso__pasos { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+/* /////////////////////////// FINAL DE BENEFICIOS // */
+
+/* ////////////////// ESTRUCTURA ///////////////////// */
+
+.estructura {
+    padding: 0 0 94px;
+}
+
+.estructura__textos {
+    padding: 0 10%;
+}
+
+.estructura__apartados {
+    padding: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.estructura__apartado {
+    border: 1px solid #0f0f0f;
+    border-radius: 5px;
+    padding: 32px;
+    margin-bottom: 24px;
+}
+
+.estructura__apartado__nombre {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .estructura__textos { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .estructura__apartados { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .estructura__textos { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .estructura__apartados { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+/* /////////////////////////// FINAL DE ESTRUCTURA // */
