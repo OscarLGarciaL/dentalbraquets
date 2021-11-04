@@ -1460,3 +1460,30 @@ input[type="checkbox"] {
 }
 
 /* /////////////////////////// FINAL DE ESTRUCTURA // */
+
+/* /////////////////////////// PAGO CORRECTO // */
+
+.error {
+    padding: 94px 0;
+}
+
+.error__imagen {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.error__imagen__icono {
+    width: 160px;
+    height: auto;
+}
+
+.error__textos {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
