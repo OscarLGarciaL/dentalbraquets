@@ -1870,3 +1870,137 @@ input[type="submit"]:hover, input[type="submit"]:active {
 }
 
 /* ///////////////////// FINAL DE CAMBIAR CONTRASEÑA // */
+
+/* /////////////////////////////////// INICIAR SESIÓN // */
+
+.inicioSesion {
+    padding: 94px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicioSesion__textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.inicioSesion__block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10%;
+    margin-bottom: 24px;
+}
+ 
+/* /// INPUT // */
+
+/* (Para ocultar las flechitas en los input number) */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.formularioInfo__input {
+    font-family: inherit;
+    font-size: 18px;
+    padding: 16px 24px;
+    border: 1px solid #0f0f0f;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    display: block;
+    background-color: #EFEFEF;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.formularioInfo__input:focus {
+    border: 1px solid #0062CB;
+}
+
+/* ////// BOTÓN DE MENTIRA PERO QUE FUNCIOINA ///////// */
+
+.__botonSecundario__margenSuperior {
+    margin: 32px auto 0;
+}
+
+.__botonSecundario__enlace:link, .__botonSecundario__enlace:visited {
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 8px 32px 8px 32px;
+    border-radius: 50px;
+    background-color: #EFEFEF;
+    color: #0062CB;
+    border: 2px solid #0062CB;
+}
+
+.__botonSecundario__enlace:hover, .__botonSecundario__enlace:active {
+    background-color: #0062CB;
+    color: #EFEFEF;
+    border: 2px solid #0062CB;
+}
+
+.registro {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.registro__enlace {
+    color: #0062CB;
+    text-decoration-line: underline;
+}
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .inicioSesion__textos { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .inicioSesion__block { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .registro {
+        text-align: center;
+    }
+}
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .inicioSesion__textos { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .inicioSesion__block { 
+        padding-left: 35%;
+        padding-right: 35%;
+    }
+}
+
+/* ////////////////////////// FINAL DE INICIAR SESIÓN // */
