@@ -1577,3 +1577,296 @@ iframe {
 }
 
 /* /////////////////FINAL DE DATOS DE CONTACTO /////// */
+
+/* //////////////////// SERVICIOS ACTIVOS /////////// */
+
+.serviciosActivos {
+    padding: 94px 10%;
+}
+
+.serviciosActivos__servicio {
+    border: 2px solid #0062CB;
+    background-color: #EFEFEF;
+    border-radius: 50px;
+    display: flex;
+    padding: 8px 32px 8px 32px;
+    min-width: 300px;
+    cursor: pointer;
+    color: #0062CB;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.serviciosActivos__servicio:not(:first-of-type) {
+    margin-top: 16px;
+}
+
+.serviciosActivos__servicio:hover {
+    border: 2px solid #0062CB;
+    background-color: #0062CB;
+    color: #EFEFEF;
+}
+
+.serviciosActivos__servicio__fecha {
+    margin-right: 16px;
+    color: inherit;
+}
+
+.serviciosActivos__servicio__nombre {
+    color: inherit;
+}
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .serviciosActivos { 
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+}
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .serviciosActivos { 
+        padding-left: 35%;
+        padding-right: 35%;
+    }
+}
+
+/* /////////////////////////////////// FINAL DE SERVICIOS ACTIVOS // */
+
+/* /////////////////////////////////// TUS DATOS // */
+
+.datosUsuario {
+    padding: 0px 10% 94px;
+}
+
+.datosUsuario__bloque {
+    margin-bottom: 32px;
+}
+
+.datosUsuario__bloque:last-of-type {
+    margin-bottom: 0px;
+}
+
+.datosUsuario__tipoDatos {
+    margin-bottom: 16px;
+}
+
+.datosUsuario__contenedor {
+    border: 2px solid #0062CB;
+    border-radius: 5px;
+    padding: 0 12px;
+}
+
+.datosUsuario__contenedor__apartado {
+    border-bottom: 2px solid #0062CB;
+    padding: 16px 24px;
+}
+
+.datosUsuario__contenedor__apartado:last-of-type {
+    border-bottom: 0;
+}
+
+.apartado__nombre {
+    font-weight: bold;
+}
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .datosUsuario { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .datosUsuario { 
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+}
+
+/* /////////////////////////////////// FINAL DE TUS DATOS // */
+
+/* ////////////////////////////////// EDITAR PERFIL // */
+
+.editarPerfil {
+    padding: 0 10% 94px;
+}
+
+.editarPerfil__bloque {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.editarPerfil__tipoDatos {
+    margin: 24px 0 24px;
+}
+
+.editarPerfil__tipoDatos:first-of-type {
+    margin-top: 0;
+}
+
+.editarPerfil__apartado {
+    width: 100%;
+}
+
+.editarPerfil__apartado:last-of-type {
+    margin-bottom: 40px;
+}
+
+.editarPerfil__apartado__nombre {
+    margin-bottom: 8px;
+}
+
+/* /// INPUT // */
+
+/* (Para ocultar las flechitas en los input number) */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.formularioInfo__input {
+    font-family: inherit;
+    font-size: 18px;
+    padding: 16px 24px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    width: 100%;
+    background-color: #EFEFEF;
+}
+
+/* /// SUBMIT // */
+input[type="submit"] {
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 8px 32px 8px 32px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #EFEFEF;
+    color: #0062CB;
+    border: 2px solid #0062CB;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+input[type="submit"]:hover, input[type="submit"]:active {
+    background-color: #0062CB;
+    color: #EFEFEF;
+}
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .editarPerfil { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .editarPerfil { 
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+}
+
+/* //////////////////////////// FINAL DE EDITAR PERFIL // */
+
+/* ////////////////////// CAMBIAR CONTRASEÑA // */
+
+.cambiarContrasenya {
+    padding: 0 10% 94px;
+}
+
+.cambiarContrasenya__bloque {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cambiarContrasenya__apartado {
+    width: 100%;
+}
+
+.cambiarContrasenya__apartado:last-of-type {
+    margin-bottom: 40px;
+}
+
+.cambiarContrasenya__apartado__nombre {
+    margin-bottom: 8px;
+}
+
+/* /// INPUT // */
+
+/* (Para ocultar las flechitas en los input number) */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.formularioInfo__input {
+    font-family: inherit;
+    font-size: 18px;
+    padding: 16px 24px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    width: 100%;
+    background-color: #EFEFEF;
+}
+
+/* /// SUBMIT // */
+input[type="submit"] {
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 8px 32px 8px 32px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #EFEFEF;
+    color: #0062CB;
+    border: 2px solid #0062CB;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+input[type="submit"]:hover, input[type="submit"]:active {
+    background-color: #0062CB;
+    color: #EFEFEF;
+}
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .cambiarContrasenya { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .cambiarContrasenya { 
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+}
+
+/* ///////////////////// FINAL DE CAMBIAR CONTRASEÑA // */
