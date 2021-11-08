@@ -170,7 +170,7 @@ a a:hover a:active a:visited {
 .header__dentalBraquetsLogo__iconoMenu {
     width: 35px;
     height: 35px;
-    background-image: url(images/icons/menu-white-48dp.svg);
+    background-image: url(../images/icons/menu-white-48dp.svg);
     background-size: contain;
     cursor: pointer;
 }
