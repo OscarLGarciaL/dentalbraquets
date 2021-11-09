@@ -116,6 +116,8 @@ a a:hover a:active a:visited {
     position: fixed;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.219);
     width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
     overflow-y: hidden;
     z-index: 1;
     height: 75px; /* ALTURA DE .headerContenedor__logo */
@@ -123,6 +125,8 @@ a a:hover a:active a:visited {
 
 .headerContenedor__menuPequeno {
     background-color: #0062CB;
+    max-width: 1920px;
+    margin: 0 auto;
     padding-top: 16px;
     padding-bottom: 84px; /* la altura de .headerContenedor__logo */
 }
@@ -1144,7 +1148,7 @@ select:-webkit-autofill:focus {
   background-color: #EFEFEF;
   transition: background-color 5000s ease-in-out 0s; /* para que no cambie el fondo */
   font-size: 18px;
-  font-family: inherit;;
+  font-family: inherit;
 }
 
 .contenedorFormularioInfo__block {
