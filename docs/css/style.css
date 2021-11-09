@@ -210,8 +210,8 @@ a a:hover a:active a:visited {
     background-color: #0062CB;
     width: 100%;
     max-width: 1920px;
-    border: 0 auto;
-    padding: 5px max(20%, 384px) 20px;
+    margin: 0 auto;
+    padding: 5px min(20%, 384px) 20px;
     display: none;
 }
 
