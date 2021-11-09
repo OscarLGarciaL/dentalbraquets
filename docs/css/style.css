@@ -54,6 +54,8 @@ a a:hover a:active a:visited {
 .contenedor {
     position: relative;
     min-width: 375px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .__titulo {
