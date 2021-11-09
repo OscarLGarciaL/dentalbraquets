@@ -209,6 +209,8 @@ a a:hover a:active a:visited {
 .headerContenedor__menuGrande {
     background-color: #0062CB;
     width: 100%;
+    max-width: 1920px;
+    border: 0 auto;
     padding: 5px 20% 20px;
     display: none;
 }
