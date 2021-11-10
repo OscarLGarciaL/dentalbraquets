@@ -22,17 +22,6 @@ h1, h2, h3, h4, h5, p, ul, li {
     list-style: none;
 }
 
-h1 {
-    font-size: 28px;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #0062CB;
-}
-
 p {
     font-size: 1.8rem;
     color: #0f0f0f;
@@ -64,6 +53,7 @@ a a:hover a:active a:visited {
     margin-bottom: 8px;
     width: 100%;
     font-size: 3rem;
+    font-weight: bold;
 }
 
 .__subtitulo {
@@ -71,6 +61,7 @@ a a:hover a:active a:visited {
     font-weight: bolder;
     width: 100%;
     font-size: 2rem;
+    color: #0062CB;
 }
 
 .__texto {
@@ -92,7 +83,11 @@ a a:hover a:active a:visited {
 
 /* ////// BOTÓN DE MENTIRA PERO QUE FUNCIOINA ///////// */
 .__botonSecundario__margenSuperior {
-    margin: 8px auto 0;
+    margin: 4rem auto 0;
+}
+
+.__botonSecundario__margen {
+    margin: 0 auto;
 }
 
 .__botonSecundario__enlace:link, .__botonSecundario__enlace:visited {
@@ -377,6 +372,10 @@ a a:hover a:active a:visited {
     color: #0062CB;
 }
 
+.CTA-margin-bottom {
+    margin-bottom: 96px;
+}
+
 /* ////////////////////////////////////////// TESTIMONIOS /// */
 
 .testimonios {
@@ -560,15 +559,21 @@ a a:hover a:active a:visited {
 }
 
 .blog__entrada__titulo {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: normal;
     text-align: center;
-    text-decoration-line: underline;
     height: auto;
+    display: block;
 }
 
-.blog__entrada:hover .blog__entrada__titulo {
+.blog__entrada__enlace:visited, .blog__entrada__enlace:link {
+    color: #000000;
+    text-decoration-color: #000000;
+}
+
+.blog__entrada__enlace:hover {
     color: #0062CB;
+    text-decoration-color: #0062CB;
 }
 
 /* ////////////////////////////////////////// FOOTER /// */
@@ -1218,6 +1223,7 @@ input[type=number] {
     justify-content: center;
     margin-bottom: 32px;
     flex-basis: 100%;
+    font-size: 1.8rem;
 }
 
 input[type="checkbox"] {
@@ -1231,6 +1237,15 @@ input[type="checkbox"] {
 .registro {
     width: 100%;
     margin-top: 40px;
+    text-align: center;
+}
+
+.registro__enlace:link, .registro__enlace:visited {
+    color: #0062CB;
+}
+
+.registro__enlace:hover {
+    text-decoration: none;
 }
 
 /* //////////// MEDIA QUERY 768px ///// */
@@ -1337,6 +1352,8 @@ input[type="checkbox"] {
 
 .beneficio__texto {
     text-align: center;
+    font-size: 1.8rem;
+    font-weight: normal;
 }
 
 /* //////////// MEDIA QUERY 768px ///// */
@@ -1555,6 +1572,9 @@ input[type="checkbox"] {
 
 .datosContacto__bloque__ciudad {
     margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0062CB;
 }
 
 .datosContacto__bloque__lineaDatos {
@@ -1647,15 +1667,18 @@ iframe {
     border: 2px solid #0062CB;
     background-color: #0062CB;
     color: #EFEFEF;
+    font-size: 1.8rem;
 }
 
 .serviciosActivos__servicio__fecha {
     margin-right: 16px;
     color: inherit;
+    font-size: 1.8rem;
 }
 
 .serviciosActivos__servicio__nombre {
     color: inherit;
+    font-size: 1.8rem;
 }
 
 /* //////////// MEDIA QUERY 768px ///// */
@@ -1694,6 +1717,7 @@ iframe {
 
 .datosUsuario__tipoDatos {
     margin-bottom: 16px;
+    font-size: 1.8rem;
 }
 
 .datosUsuario__contenedor {
@@ -1709,10 +1733,6 @@ iframe {
 
 .datosUsuario__contenedor__apartado:last-of-type {
     border-bottom: 0;
-}
-
-.apartado__nombre {
-    font-weight: bold;
 }
 
 /* //////////// MEDIA QUERY 768px ///// */
@@ -1749,6 +1769,7 @@ iframe {
 
 .editarPerfil__tipoDatos {
     margin: 24px 0 24px;
+    font-size: 1.8rem;
 }
 
 .editarPerfil__tipoDatos:first-of-type {
