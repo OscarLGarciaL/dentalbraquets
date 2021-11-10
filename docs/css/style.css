@@ -1,5 +1,6 @@
 html {
-    background-color: #EFEFEF;
+    background-color: #dddddd;
+    font-size: 10px;
 }
 
 html * {
@@ -14,7 +15,7 @@ html, body {
     font-family: 'Be Vietnam', sans-serif;
 }
 
-h1, h2, h3, p, ul, li {
+h1, h2, h3, h4, h5, p, ul, li {
     margin: 0;
     padding: 0;
     font-family: 'Be Vietnam', sans-serif;
@@ -33,7 +34,7 @@ h2 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #0f0f0f;
     font-weight: normal;
 }
@@ -56,17 +57,20 @@ a a:hover a:active a:visited {
     min-width: 375px;
     max-width: 1920px;
     margin: 0 auto;
+    background-color: #EFEFEF;
 }
 
 .__titulo {
     margin-bottom: 8px;
     width: 100%;
+    font-size: 3rem;
 }
 
 .__subtitulo {
     margin-bottom: 40px;
     font-weight: bolder;
     width: 100%;
+    font-size: 2rem;
 }
 
 .__texto {
@@ -243,7 +247,7 @@ a a:hover a:active a:visited {
 }
 
 .banner__caption {
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: normal;
     color: #EFEFEF;
     margin-bottom: 32px;
@@ -266,7 +270,7 @@ a a:hover a:active a:visited {
 }
 
 .benefits__caption {
-    font-size: 17px;
+    font-size: 1.8rem;
     font-weight: normal;
     color: #EFEFEF;
 }
@@ -333,6 +337,7 @@ a a:hover a:active a:visited {
 .servicios__servicio__titulo {
     text-align: center;
     margin-bottom: 16px;
+    font-size: 2rem;
 }
 
 .servicios__servicio__texto {
@@ -399,6 +404,7 @@ a a:hover a:active a:visited {
     justify-content: space-between;
     min-width: 300px;
     flex-grow: 1;
+    max-width: 669.34px;
 }
 
 .testimonios__testimonio__perfil {
@@ -441,14 +447,14 @@ a a:hover a:active a:visited {
     color: #0062CB;
     font-size: 20px;
     font-weight: bold;
-    text-align: center;
     margin-bottom: 24px;
+    display: block;
+    text-align: center;
 }
 
 .testimonio__textos__cita {
     font-style: italic;
     margin-bottom: 18px;
-    text-align: left;
 }
 
 .testimonio__textos__nombreDoctor {
@@ -456,11 +462,14 @@ a a:hover a:active a:visited {
     font-style: italic;
     margin-bottom: 32px;
     text-align: right;
+    display: block;
+    font-size: 1.6rem;
 }
 
 .testimonio__textos__detalles {
     font-size: 20px;
     font-weight: normal;
+    margin-bottom: 0;
     text-align: center;
 }
 
@@ -490,6 +499,7 @@ a a:hover a:active a:visited {
     margin: 0 auto 32px;
     min-width: 300px;
     flex-grow: 1;
+    max-width: 700px;
 }
 
 .pains__block__pain:last-of-type {
@@ -501,10 +511,10 @@ a a:hover a:active a:visited {
     font-style: italic;
     margin-bottom: 20px;
     text-align: center;
+    font-size: 1.8rem;
 }
 
 .pain__detalles {
-    font-size: 18px;
     font-weight: normal;
     text-align: center;
 }
@@ -691,6 +701,7 @@ a a:hover a:active a:visited {
     .servicios__servicio {
         flex-basis: 45%;
         flex-grow: unset;
+        max-width: 367.56px;
     }
     
     .servicios__servicio:last-of-type {
@@ -723,6 +734,14 @@ a a:hover a:active a:visited {
 
     .testimonios__testimonio:last-of-type {
         flex-basis: 60%;
+    }
+
+    .testimonio__textos__nombreClinica {
+        text-align: left;
+    }
+
+    .testimonio__textos__detalles {
+        text-align: left;
     }
 
     /* ////////////////////////////////////////// PAINS /// */
