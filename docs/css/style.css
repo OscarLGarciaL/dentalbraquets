@@ -83,14 +83,14 @@ a:hover .__botonSecundario {
     background-color: #0062CB;
     color: #EFEFEF;
     cursor: pointer;
-    outline: 7px double #0062CB;
+    outline: 2px solid #0062CB;
 }
 
-a:focus .__botonSecundario {
-    background-color: black;
+a:focus .__botonSecundario, a:active .__botonSecundario {
+    background-color: #0062CB;
     color: #EFEFEF;
     cursor: pointer;
-    outline: 7px double black;    
+    outline: 7px double #0062CB;    
 }
 
 /* ////// BOTÓN DE MENTIRA PERO QUE FUNCIOINA ///////// */
@@ -100,30 +100,6 @@ a:focus .__botonSecundario {
 
 .__botonSecundario__margen {
     margin: 0 auto;
-}
-
-.__botonSecundario__enlace:link, .__botonSecundario__enlace:visited {
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 8px 32px 8px 32px;
-    border-radius: 50px;
-    background-color: #EFEFEF;
-    color: #0062CB;
-    outline: 2px solid #0062CB;
-    text-align: center;
-    text-decoration: none;
-}
-
-.__botonSecundario__enlace:hover {
-    background-color: #0062CB;
-    color: #EFEFEF;
-    outline: 7px double #0062CB;
-}
-
-.__botonSecundario__enlace:focus {
-    background-color: black;
-    outline: 7px double black;
 }
 
 /* ////////////////////////////////////////// HEADER /// */
@@ -299,15 +275,15 @@ a:link .banner__button, a:visited .banner__button {
 }
 
 a:hover .banner__button, a:active .banner__button {
-    outline: 7px double #EFEFEF;
+    outline: 2px solid #EFEFEF;
     background-color: #EFEFEF;
     color: #0062CB;
     cursor: pointer;
 }
 
 a:focus .banner__button {
-    outline: 7px double black;
-    background-color: black;
+    outline: 7px double #EFEFEF;
+    background-color: #EFEFEF;
     color: #0062CB;
 }
 
@@ -368,6 +344,26 @@ a:focus .banner__button {
     margin-bottom: 32px;
 }
 
+a.servicios__servicio__enlace:link, a.servicios__servicio__enlace:visited {
+    color: #0062CB;
+    white-space: nowrap;
+}
+
+a.servicios__servicio__enlace::after {
+  content: "...";
+  color: #0062CB;
+} 
+
+a.servicios__servicio__enlace:hover::after {
+  content: " >";
+  color: #0062CB;
+} 
+
+a.servicios__servicio__enlace:focus {
+    text-decoration: underline;
+}
+
+
 /* ////////////////////////////////////////// CTA /// */
 
 .CTA {
@@ -390,7 +386,7 @@ a:focus .banner__button {
 a:link .CTA__boton, a:visited .CTA__boton {
     color: #EFEFEF;
     outline: 2px solid #EFEFEF;
-    background-color: none;
+    background-color: transparent;
     cursor: pointer;
     border-radius: 50px;
     font-size: 2rem;
@@ -399,16 +395,15 @@ a:link .CTA__boton, a:visited .CTA__boton {
     text-decoration: none;
 }
 
-a:hover .CTA__boton, a:active .CTA__boton {
-    outline: 7px double #EFEFEF;
+a:hover .CTA__boton  {
+    outline: 2px solid #EFEFEF;
     background-color: #EFEFEF;
     color: #0062CB;
-    position: relative;
 }
 
-a:focus .CTA__boton {
-    outline: 7px double black;
-    background-color: black;
+a:focus .CTA__boton, a:active .CTA__boton {
+    outline: 7px double #EFEFEF;
+    background-color: #EFEFEF;
     color: #0062CB;
 }
 
@@ -1156,20 +1151,24 @@ a:focus .CTA__boton {
     color: #0062CB;
     margin: 40px auto;
     outline: 2px solid #0062CB;
+    border: 0;
     cursor: pointer;
     display: inline-block;
     padding: 8px 32px;
+    font-size: 2rem;
+    border-radius: 50px;
+    font-weight: bold;
 }
 
 .botonImportante:hover {
     background-color: #0062CB;
     color: #EFEFEF;
-    outline: 7px double #0062CB;
+    outline: 2px solid #0062CB;
 }
 
 .botonImportante:focus {
-    background-color: black;
-    outline: 7px double black;
+    background-color: #0062CB;
+    outline: 7px double #0062CB;
     color: #EFEFEF;
 }
 
@@ -1884,6 +1883,7 @@ input[type="submit"] {
     background-color: #EFEFEF;
     color: #0062CB;
     outline: 2px solid #0062CB;
+    border: 0;
     cursor: pointer;
     margin: 0 auto;
 }
@@ -1891,13 +1891,13 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #0062CB;
     color: #EFEFEF;
-    outline: 7px double #0062CB;
+    outline: 2px double #0062CB;
 }
 
 input[type="submit"]:active {
-    background-color: black;
+    background-color: #0062CB;
     color: #EFEFEF;
-    outline: 7px double black;
+    outline: 7px double #0062CB;
 }
 
 /* //////////// MEDIA QUERY 768px ///// */
