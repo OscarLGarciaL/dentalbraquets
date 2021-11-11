@@ -37,7 +37,7 @@ button {
     border: 0;
 }
 
-a a:hover a:active a:visited {
+a, a:link, a:hover, a:active, a:visited {
     text-decoration: none;
 }
 
@@ -68,17 +68,29 @@ a a:hover a:active a:visited {
     margin-bottom: 32px;
 }
 
-.__botonSecundario {
+a .__botonSecundario {
     background-color: #EFEFEF;
     color: #0062CB;
-    border: 2px solid #0062CB;
+    outline: 2px solid #0062CB;
+    display: inline-block;
+    padding: 8px 32px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 50px;
 }
 
-.__botonSecundario:hover {
+a:hover .__botonSecundario {
     background-color: #0062CB;
     color: #EFEFEF;
-    border: 2px solid #0062CB;
     cursor: pointer;
+    outline: 7px double #0062CB;
+}
+
+a:focus .__botonSecundario {
+    background-color: black;
+    color: #EFEFEF;
+    cursor: pointer;
+    outline: 7px double black;    
 }
 
 /* ////// BOTÓN DE MENTIRA PERO QUE FUNCIOINA ///////// */
@@ -98,15 +110,20 @@ a a:hover a:active a:visited {
     border-radius: 50px;
     background-color: #EFEFEF;
     color: #0062CB;
-    border: 2px solid #0062CB;
+    outline: 2px solid #0062CB;
     text-align: center;
     text-decoration: none;
 }
 
-.__botonSecundario__enlace:active {
+.__botonSecundario__enlace:hover {
     background-color: #0062CB;
     color: #EFEFEF;
-    border: 2px solid #0062CB;
+    outline: 7px double #0062CB;
+}
+
+.__botonSecundario__enlace:focus {
+    background-color: black;
+    outline: 7px double black;
 }
 
 /* ////////////////////////////////////////// HEADER /// */
@@ -270,17 +287,28 @@ a a:hover a:active a:visited {
     color: #EFEFEF;
 }
 
-.banner__button {
-    color: #EFEFEF;
-    border: 2px solid #EFEFEF;
+a:link .banner__button, a:visited .banner__button {
+    color: #EFEFEF; 
+    outline: 2px solid #EFEFEF;
     background-color: #0062cb00;
+    font-size: 2rem;
+    padding: 8px 32px;
+    display: inline-block;
+    border-radius: 50px;
+    font-weight: bold;
 }
 
-.banner__button:hover, .banner__button:active {
-    border: 2px solid #EFEFEF;
+a:hover .banner__button, a:active .banner__button {
+    outline: 7px double #EFEFEF;
     background-color: #EFEFEF;
     color: #0062CB;
     cursor: pointer;
+}
+
+a:focus .banner__button {
+    outline: 7px double black;
+    background-color: black;
+    color: #0062CB;
 }
 
 /* ////////////////////////////////////////// PRESENTACIÓN // */
@@ -359,16 +387,28 @@ a a:hover a:active a:visited {
     font-weight: normal;
 }
 
-.CTA__boton {
+a:link .CTA__boton, a:visited .CTA__boton {
     color: #EFEFEF;
-    border: 2px solid #EFEFEF;
-    background-color: #0062cb00;
+    outline: 2px solid #EFEFEF;
+    background-color: none;
     cursor: pointer;
+    border-radius: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 8px 32px;
+    text-decoration: none;
 }
 
-.CTA__boton:hover, .CTA__boton:active {
-    border: 2px solid #EFEFEF;
+a:hover .CTA__boton, a:active .CTA__boton {
+    outline: 7px double #EFEFEF;
     background-color: #EFEFEF;
+    color: #0062CB;
+    position: relative;
+}
+
+a:focus .CTA__boton {
+    outline: 7px double black;
+    background-color: black;
     color: #0062CB;
 }
 
@@ -587,6 +627,22 @@ a a:hover a:active a:visited {
     display: flex;
     justify-content: space-around;
     margin-bottom: 32px;
+}
+
+.footer__redesSociales__icon {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    outline: 0px solid #EFEFEF;
+    border-radius: 5px;
+}
+
+.footer__redesSociales__icon:hover {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    outline: 2px solid #EFEFEF;
+    border-radius: 5px;
 }
 
 .footer__redesSociales__icon {
@@ -1099,12 +1155,21 @@ a a:hover a:active a:visited {
     background-color: #EFEFEF;
     color: #0062CB;
     margin: 40px auto;
-    border: 2px solid #0062CB;
+    outline: 2px solid #0062CB;
     cursor: pointer;
+    display: inline-block;
+    padding: 8px 32px;
 }
 
-.botonImportante:hover, .botonImportante:active, .botonImportante:focus {
+.botonImportante:hover {
     background-color: #0062CB;
+    color: #EFEFEF;
+    outline: 7px double #0062CB;
+}
+
+.botonImportante:focus {
+    background-color: black;
+    outline: 7px double black;
     color: #EFEFEF;
 }
 
@@ -1810,22 +1875,29 @@ input::-webkit-inner-spin-button {
 
 /* /// SUBMIT // */
 input[type="submit"] {
+    border: 0;
     font-size: 20px;
     font-family: inherit;
     font-weight: bold;
     padding: 8px 32px 8px 32px;
-    border-radius: 50px;
-    border: 0;
+    border-radius: 50px; 
     background-color: #EFEFEF;
     color: #0062CB;
-    border: 2px solid #0062CB;
+    outline: 2px solid #0062CB;
     cursor: pointer;
     margin: 0 auto;
 }
 
-input[type="submit"]:hover, input[type="submit"]:active {
+input[type="submit"]:hover {
     background-color: #0062CB;
     color: #EFEFEF;
+    outline: 7px double #0062CB;
+}
+
+input[type="submit"]:active {
+    background-color: black;
+    color: #EFEFEF;
+    outline: 7px double black;
 }
 
 /* //////////// MEDIA QUERY 768px ///// */
@@ -1870,47 +1942,6 @@ input[type="submit"]:hover, input[type="submit"]:active {
 
 .cambiarContrasenya__apartado__nombre {
     margin-bottom: 8px;
-}
-
-/* /// INPUT // */
-
-/* (Para ocultar las flechitas en los input number) */
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.formularioInfo__input {
-    font-family: inherit;
-    font-size: 18px;
-    padding: 16px 24px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-bottom: 16px;
-    width: 100%;
-    background-color: #EFEFEF;
-}
-
-/* /// SUBMIT // */
-input[type="submit"] {
-    font-size: 20px;
-    font-family: inherit;
-    font-weight: bold;
-    padding: 8px 32px 8px 32px;
-    border-radius: 50px;
-    border: 0;
-    background-color: #EFEFEF;
-    color: #0062CB;
-    border: 2px solid #0062CB;
-    cursor: pointer;
-    margin: 0 auto;
-}
-
-input[type="submit"]:hover, input[type="submit"]:active {
-    background-color: #0062CB;
-    color: #EFEFEF;
 }
 
 /* //////////// MEDIA QUERY 768px ///// */
