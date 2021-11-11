@@ -501,8 +501,8 @@ a:focus .CTA__boton, a:active .CTA__boton {
 }
 
 .testimonio__textos__detalles {
-    font-size: 20px;
-    font-weight: normal;
+    font-size: 1.8rem;
+    font-weight: bold;
     margin-bottom: 0;
     text-align: center;
 }
@@ -603,12 +603,17 @@ a:focus .CTA__boton, a:active .CTA__boton {
 
 .blog__entrada__enlace:visited, .blog__entrada__enlace:link {
     color: #000000;
+    text-decoration: underline;
     text-decoration-color: #000000;
 }
 
 .blog__entrada__enlace:hover {
     color: #0062CB;
-    text-decoration-color: #0062CB;
+    text-decoration: none;
+}
+
+.blog__entrada__enlace:focus {
+    text-decoration: underline;
 }
 
 /* ////////////////////////////////////////// FOOTER /// */
